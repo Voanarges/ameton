@@ -1,0 +1,39 @@
+.delivery{
+    width: 730px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    padding: 22px 40px;
+   .title_size_24{
+       img{margin-left: 15px;}
+   }
+   &__buttons{
+       display: grid;
+       grid-template-columns: 224px 48px 48px;
+       grid-template-rows: repeat(1, minmax(48px,48px));
+       column-gap: 8px;
+       &_btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            background-color: #F9F9F9;
+            width: 48px;
+
+            .title_size_15_21_white{
+                margin-left: 8px;
+                margin-bottom: 0px;
+            }
+            img{
+                width: 16px;
+                height: 16px;
+                object-fit: contain;
+            }
+        }
+        &_btn:first-child{
+            width: 224px;
+            background-color: #36BA5F;
+        }
+   }
+}

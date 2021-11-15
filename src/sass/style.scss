@@ -1,0 +1,30 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+// @import 'base/variables';
+// @import 'base/mixins';
+// @import 'blocks/head';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/wrapper';
+@import 'blocks/social';
+@import 'blocks/quastions';
+@import 'blocks/ask';
+@import 'blocks/delivery';
+@import 'blocks/media';
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+// body{
+//     display: flex;
+//     justify-content: center;
+// }
+
+
+// .container {
+//     width: 1140px;
+//     margin: 0 auto;
+// }
+

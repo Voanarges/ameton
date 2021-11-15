@@ -1,0 +1,202 @@
+
+@media (min-width: 1201px) {
+    
+}
+@media (max-width: 1400px) {
+    
+}
+@media (max-width: 1200px) {
+    .delivery {
+        width: 94%;
+        margin: 0 3%;
+        display: grid;
+        justify-content: center;
+        &__buttons{
+            grid-template-columns: 140px 48px 48px;
+            grid-template-rows: repeat(1, minmax(48px,48px));
+            &_btn:first-child{
+                width: 140px;
+                background-color: #36BA5F;
+            }
+        }
+    }
+    .wrapper{
+        width: 96%;
+        margin: 0 1%;
+        display: grid;
+        justify-content: center;
+    }
+    .header{
+        width: 1000px;
+        height: auto;
+        margin: 25px auto;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        background-image: none;
+        background-color: #93BBEA;
+        &__buttons{
+            grid-template-columns: repeat(2, minmax(160px,160px));
+            grid-template-rows: repeat(2, minmax(48px,48px));
+            row-gap: 8px;
+        }
+        .title_size_60{
+            font-size: 44px;
+            line-height: 50px;
+        }
+    }
+    .social{
+        width: 1000px;
+        height: auto;
+        padding: 4px 2px;
+        flex-direction: column;
+        justify-content: center;
+        .title_size_15{
+            font-size: 13px;
+            line-height: 14px;
+        }
+        .title_size_40{
+            font-size: 28px;
+            line-height: 31px;
+        }
+      
+        &__icons{
+            grid-template-columns: repeat(3, minmax(56px,56px));
+            grid-template-rows: repeat(3, minmax(56px,56px));
+            gap: 10px;
+        }
+    }
+    .title_size_40{
+        font-size: 33px;
+        line-height: 40px;
+    }
+    .quastions{
+        width: 300px;
+        box-sizing: border-box;
+        column-gap: 0px;
+        justify-content: flex-start;
+        a:hover{
+         cursor: pointer;
+         transform: none;
+         transition: none;
+        }
+    }
+    .ask{
+        grid-template-columns: repeat(1, minmax(996px,996px));
+    }
+
+}
+@media (max-width: 992px) {
+    .header{
+        width: 800px;
+    }
+    .social{
+        width: 800px;
+    }
+    .ask{
+        grid-template-columns: repeat(1, minmax(700px,700px));
+    }
+   
+}
+@media (max-width: 832px){
+    .header{
+        width: 800px;
+    }
+    .social{
+        width: 800px;
+    }
+  
+}
+@media (max-width: 768px) {
+    .header{
+        width: 700px;
+    }
+    .social{
+        width: 700px;
+    }
+ 
+}
+@media (max-width: 692px) {
+    .wrapper{
+        width: 96%;
+        margin: 0 1%;
+        display: grid;
+        justify-content: center;
+    }
+    .delivery {
+        width: 94%;
+        margin: 0 3%;
+        display: grid;
+        justify-content: center;
+        &__buttons{
+            grid-template-columns: 140px 48px 48px;
+            grid-template-rows: repeat(1, minmax(48px,48px));
+            &_btn:first-child{
+                width: 140px;
+                background-color: #36BA5F;
+            }
+        }
+
+    }
+    .header{
+        width: 600px;
+        height: auto;
+        margin: 25px auto;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        background-image: none;
+        background-color: #93BBEA;
+        &__buttons{
+            grid-template-columns: repeat(2, minmax(160px,160px));
+            grid-template-rows: repeat(2, minmax(48px,48px));
+            row-gap: 8px;
+        }
+        .title_size_60{
+            font-size: 44px;
+            line-height: 50px;
+        }
+    }
+    .social{
+        width: 600px;
+    }
+    .ask{
+        grid-template-columns: repeat(1, minmax(600px,600px));
+    }
+ 
+}
+
+@media (max-width: 576px) {
+    
+    .header{
+        width: 300px;
+        height: auto;
+   
+        &__buttons{
+            grid-template-columns: repeat(1, minmax(160px,160px));
+            grid-template-rows: repeat(4, minmax(48px,48px));
+        }
+        .title_size_60{
+            font-size: 44px;
+            line-height: 50px;
+        }
+    }
+    .social{
+        width: 300px;
+    }
+    .quastions{
+       width: 300px;
+       box-sizing: border-box;
+       column-gap: 0px;
+       justify-content: flex-start;
+       a:hover{
+        cursor: pointer;
+        transform: none;
+        transition: none;
+        }
+    }
+    .ask{
+        grid-template-columns: repeat(1, minmax(300px,300px));
+    }
+  
+    
+}
+
