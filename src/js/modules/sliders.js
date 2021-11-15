@@ -14,17 +14,35 @@ const sliders = (sliderSelector, nextSelector) => {
         if (n < 1) {
             slideIndex = slides.length;
         }
-        if(window.screen.availWidth < 1200) {
-           slides.forEach(item => {
-            item.classList.add("animate__animated");
-            item.style.display = "none";
-            }) 
-            slides[slideIndex - 1].style.display = 'flex';
-        } else {
-            slides.forEach(item => {
-                item.classList.add("animate__animated");
+        window.addEventListener('resize', ()=>{
+            if(window.screen.availWidth < 1200) {
+                slides.forEach(item => {
+                    item.classList.add("animate__animated");
+                    item.style.display = "none";
+                    }) 
+                slides[slideIndex - 1].style.display = 'flex';
+             } else if (window.screen.availWidth > 1200) {
+                slides.forEach(item => {
+                    item.classList.add("animate__animated");
+                    item.style.display = "flex";
+                }) 
+             } else {
+                slides.forEach(item => {
+                    item.classList.add("animate__animated");
                 })
-        }
+             }
+        })
+        // if(window.screen.availWidth < 1200) {
+        //    slides.forEach(item => {
+        //     item.classList.add("animate__animated");
+        //     item.style.display = "none";
+        //     }) 
+        //     slides[slideIndex - 1].style.display = 'flex';
+        // } else {
+        //     slides.forEach(item => {
+        //         item.classList.add("animate__animated");
+        //         })
+        // }
         
         // 
     }
